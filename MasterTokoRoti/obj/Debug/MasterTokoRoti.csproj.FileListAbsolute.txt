@@ -45,3 +45,16 @@ C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti - Copy\Maste
 C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti - Copy\MasterTokoRoti\obj\Debug\MasterTokoRoti.KeluarMasukRoti.resources
 C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti - Copy\MasterTokoRoti\obj\Debug\MasterTokoRoti.PenangananBahan.resources
 C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti - Copy\MasterTokoRoti\obj\Debug\MasterTokoRoti.PenganananRoti.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.DetailBahan.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.InsertBahan.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.KeluarMasukRoti.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.DetailRoti.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.DetailPegawai.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.InsertPegawai.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.Main.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.DetailSupplier.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.InsertSupplier.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.DetailKategoriRoti.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.InsertKategoriRoti.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.ViewSupplier.resources
+C:\Users\Angelin\OneDrive\Documents\Visual Studio C#\MasterTokoRoti\MasterTokoRoti\obj\Debug\MasterTokoRoti.ViewPegawai.resources

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace MasterTokoRoti
 {
-    public partial class PenangananBahan : Form
+    public partial class Main : Form
     {
-        public PenangananBahan()
+        public Main()
         {
             InitializeComponent();
+        }
+
+        private void masterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.ShowDialog();
         }
     }
 }

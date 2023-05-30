@@ -72,8 +72,7 @@ namespace MasterTokoRoti
 
         private void btnpRoti_Click(object sender, EventArgs e)
         {
-            PenganananRoti pr = new PenganananRoti();
-            pr.ShowDialog();
+
         }
     }
 }

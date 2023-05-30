@@ -52,30 +52,12 @@
     <Compile Include="Bahan\DetailBahan.Designer.cs">
       <DependentUpon>DetailBahan.cs</DependentUpon>
     </Compile>
-    <Compile Include="CariPenangananRoti.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CariPenangananRoti.Designer.cs">
-      <DependentUpon>CariPenangananRoti.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\PenangananRoti.cs" />
-    <Compile Include="PenangananBahan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PenangananBahan.Designer.cs">
-      <DependentUpon>PenangananBahan.cs</DependentUpon>
-    </Compile>
     <Compile Include="KeluarMasukRoti.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KeluarMasukRoti.Designer.cs">
       <DependentUpon>KeluarMasukRoti.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PenganananRoti.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PenganananRoti.Designer.cs">
-      <DependentUpon>PenganananRoti.cs</DependentUpon>
     </Compile>
     <Compile Include="Roti\DetailRoti.cs">
       <SubType>Form</SubType>
@@ -108,6 +90,12 @@
     </Compile>
     <Compile Include="Pegawai\InsertPegawai.Designer.cs">
       <DependentUpon>InsertPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Supplier\InsertSupplier.cs">
       <SubType>Form</SubType>
@@ -197,17 +185,8 @@
     <EmbeddedResource Include="Bahan\ViewBahan.resx">
       <DependentUpon>ViewBahan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CariPenangananRoti.resx">
-      <DependentUpon>CariPenangananRoti.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="KeluarMasukRoti.resx">
       <DependentUpon>KeluarMasukRoti.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PenangananBahan.resx">
-      <DependentUpon>PenangananBahan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PenganananRoti.resx">
-      <DependentUpon>PenganananRoti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Roti\DetailRoti.resx">
       <DependentUpon>DetailRoti.cs</DependentUpon>
@@ -217,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pegawai\InsertPegawai.resx">
       <DependentUpon>InsertPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supplier\DetailSupplier.resx">
       <DependentUpon>DetailSupplier.cs</DependentUpon>
