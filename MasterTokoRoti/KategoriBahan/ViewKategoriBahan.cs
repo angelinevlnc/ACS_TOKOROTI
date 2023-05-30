@@ -1,0 +1,98 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using MasterTokoRoti.Models;
+
+namespace MasterTokoRoti
+{
+    public partial class ViewKategoriBahan : Form
+    { 
+        public ViewKategoriBahan()
+        {
+            InitializeComponent();
+        }
+
+        public void ViewKategoriBahan_Load(object sender, EventArgs e)
+        {
+            //DataTable dtUsers = Users.fetch(); //ini nanti si method fetch untuk ngembaliin datatable sebagai source buat datagridviewnya.
+            SqlCommand cmd = new SqlCommand("SELECT id, nama_jenis,keterangan from jenis_bahan where status=1 order by id desc", DB.conn);
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dtkategoriBahan = new DataTable();
+            adapter.Fill(dtkategoriBahan);
+
+            dgvKategori.DataSource = null; //untuk menghindari error, kita bisa nge-null kan dulu datasourcenya
+            dgvKategori.DataSource = dtkategoriBahan; //baru diset dengan datatable yang tadi
+
+            dgvKategori.Columns["id"].Visible = false;
+            dgvKategori.Columns["nama_jenis"].HeaderText = "Nama";
+            dgvKategori.Columns["keterangan"].HeaderText = "Keterangan";
+            dgvKategori.Columns["nama_jenis"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvKategori.Columns["Detail"].DisplayIndex = dgvKategori.Columns.Count - 1;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DB.openConnection();
+                SqlCommand cmd = new SqlCommand("Select id,nama_jenis,keterangan From jenis_bahan where nama_jenis like '%' + @Search + '%' and status=1 order by id desc", DB.conn);
+                cmd.Parameters.AddWithValue("@Search", txtSearch.Text);
+                cmd.ExecuteNonQuery();
+
+                
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dgvKategori.DataSource = null;
+                dgvKategori.DataSource = dt;
+
+                dgvKategori.Columns["id"].Visible = false;
+                dgvKategori.Columns["nama_jenis"].HeaderText = "Nama";
+                dgvKategori.Columns["keterangan"].HeaderText = "Keterangan";
+                dgvKategori.Columns["nama_jenis"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dgvKategori.Columns["Detail"].DisplayIndex = dgvKategori.Columns.Count - 1;
+
+            }
+            catch (Exception ex)
+            {
+                DB.closeConnection();
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        private void btnTambah_Click(object sender, EventArgs e)
+        {
+            InsertKategoriBahan i = new InsertKategoriBahan(this);
+            i.ShowDialog();
+        }
+
+        private void dgvKategori_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex >= 0)
+            {
+                if (this.dgvKategori.Columns[e.ColumnIndex].Name == "Detail")
+                {
+                    int index = e.RowIndex;
+                    JenisBahan jb = new JenisBahan();
+                    //ini kalau mau pakai constructor buat ngisi propertiesnya bisa, tapi di sini kondisinya aku langsung ngisi propertiesnya :)
+
+                    jb.ID = dgvKategori.Rows[index].Cells["id"].Value.ToString();
+                    jb.NAMA_JENIS = dgvKategori.Rows[index].Cells["nama_jenis"].Value.ToString();
+                    jb.KETERANGAN = dgvKategori.Rows[index].Cells["keterangan"].Value.ToString();
+                    DetailKategoriBahan dkb = new DetailKategoriBahan(this, jb);
+                    dkb.ShowDialog();
+                }
+            }
+        }
+    }
+}

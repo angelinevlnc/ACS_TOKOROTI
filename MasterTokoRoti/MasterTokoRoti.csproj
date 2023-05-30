@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CF3861B-C538-4BC5-B80F-9F573F6E09D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MasterTokoRoti</RootNamespace>
+    <AssemblyName>MasterTokoRoti</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bahan\DetailBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bahan\DetailBahan.Designer.cs">
+      <DependentUpon>DetailBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CariPenangananRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariPenangananRoti.Designer.cs">
+      <DependentUpon>CariPenangananRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PenangananRoti.cs" />
+    <Compile Include="PenangananBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PenangananBahan.Designer.cs">
+      <DependentUpon>PenangananBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeluarMasukRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeluarMasukRoti.Designer.cs">
+      <DependentUpon>KeluarMasukRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PenganananRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PenganananRoti.Designer.cs">
+      <DependentUpon>PenganananRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roti\DetailRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roti\DetailRoti.Designer.cs">
+      <DependentUpon>DetailRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Bahan.cs" />
+    <Compile Include="Bahan\InsertBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bahan\InsertBahan.Designer.cs">
+      <DependentUpon>InsertBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bahan\ViewBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bahan\ViewBahan.Designer.cs">
+      <DependentUpon>ViewBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Roti.cs" />
+    <Compile Include="Pegawai\DetailPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pegawai\DetailPegawai.Designer.cs">
+      <DependentUpon>DetailPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pegawai\InsertPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pegawai\InsertPegawai.Designer.cs">
+      <DependentUpon>InsertPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\InsertSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\InsertSupplier.Designer.cs">
+      <DependentUpon>InsertSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriBahan\DetailKategoriBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriBahan\DetailKategoriBahan.Designer.cs">
+      <DependentUpon>DetailKategoriBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="KategoriBahan\InsertKategoriBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriBahan\InsertKategoriBahan.Designer.cs">
+      <DependentUpon>InsertKategoriBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriRoti\DetailKategoriRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriRoti\DetailKategoriRoti.Designer.cs">
+      <DependentUpon>DetailKategoriRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\DetailSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\DetailSupplier.Designer.cs">
+      <DependentUpon>DetailSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriRoti\InsertKategoriRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriRoti\InsertKategoriRoti.Designer.cs">
+      <DependentUpon>InsertKategoriRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Pegawai.cs" />
+    <Compile Include="Models\JenisBahan.cs" />
+    <Compile Include="Models\JenisRoti.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Supplier\ViewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\ViewSupplier.Designer.cs">
+      <DependentUpon>ViewSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="KategoriBahan\ViewKategoriBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriBahan\ViewKategoriBahan.Designer.cs">
+      <DependentUpon>ViewKategoriBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriRoti\ViewKategoriRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriRoti\ViewKategoriRoti.Designer.cs">
+      <DependentUpon>ViewKategoriRoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pegawai\ViewPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pegawai\ViewPegawai.Designer.cs">
+      <DependentUpon>ViewPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roti\ViewRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roti\ViewRoti.Designer.cs">
+      <DependentUpon>ViewRoti.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bahan\DetailBahan.resx">
+      <DependentUpon>DetailBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bahan\InsertBahan.resx">
+      <DependentUpon>InsertBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bahan\ViewBahan.resx">
+      <DependentUpon>ViewBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CariPenangananRoti.resx">
+      <DependentUpon>CariPenangananRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeluarMasukRoti.resx">
+      <DependentUpon>KeluarMasukRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PenangananBahan.resx">
+      <DependentUpon>PenangananBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PenganananRoti.resx">
+      <DependentUpon>PenganananRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roti\DetailRoti.resx">
+      <DependentUpon>DetailRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pegawai\DetailPegawai.resx">
+      <DependentUpon>DetailPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pegawai\InsertPegawai.resx">
+      <DependentUpon>InsertPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\DetailSupplier.resx">
+      <DependentUpon>DetailSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\InsertSupplier.resx">
+      <DependentUpon>InsertSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriBahan\DetailKategoriBahan.resx">
+      <DependentUpon>DetailKategoriBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriBahan\InsertKategoriBahan.resx">
+      <DependentUpon>InsertKategoriBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriRoti\DetailKategoriRoti.resx">
+      <DependentUpon>DetailKategoriRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriRoti\InsertKategoriRoti.resx">
+      <DependentUpon>InsertKategoriRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\ViewSupplier.resx">
+      <DependentUpon>ViewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="KategoriBahan\ViewKategoriBahan.resx">
+      <DependentUpon>ViewKategoriBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriRoti\ViewKategoriRoti.resx">
+      <DependentUpon>ViewKategoriRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pegawai\ViewPegawai.resx">
+      <DependentUpon>ViewPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roti\ViewRoti.resx">
+      <DependentUpon>ViewRoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
