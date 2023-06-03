@@ -71,7 +71,8 @@ namespace MasterTokoRoti
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-
+            InsertRoti ir = new InsertRoti();
+            ir.ShowDialog();
         }
 
         private void dgvKategori_CellContentClick(object sender, DataGridViewCellEventArgs e)

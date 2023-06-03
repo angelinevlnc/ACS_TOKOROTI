@@ -52,13 +52,13 @@
     <Compile Include="Bahan\DetailBahan.Designer.cs">
       <DependentUpon>DetailBahan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\PenangananRoti.cs" />
-    <Compile Include="KeluarMasukRoti.cs">
+    <Compile Include="MasterResep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KeluarMasukRoti.Designer.cs">
-      <DependentUpon>KeluarMasukRoti.cs</DependentUpon>
+    <Compile Include="MasterResep.Designer.cs">
+      <DependentUpon>MasterResep.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\PenangananRoti.cs" />
     <Compile Include="Roti\DetailRoti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roti\InsertRoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roti\InsertRoti.Designer.cs">
+      <DependentUpon>InsertRoti.cs</DependentUpon>
     </Compile>
     <Compile Include="Supplier\InsertSupplier.cs">
       <SubType>Form</SubType>
@@ -182,11 +188,11 @@
     <EmbeddedResource Include="Bahan\InsertBahan.resx">
       <DependentUpon>InsertBahan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MasterResep.resx">
+      <DependentUpon>MasterResep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bahan\ViewBahan.resx">
       <DependentUpon>ViewBahan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KeluarMasukRoti.resx">
-      <DependentUpon>KeluarMasukRoti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Roti\DetailRoti.resx">
       <DependentUpon>DetailRoti.cs</DependentUpon>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roti\InsertRoti.resx">
+      <DependentUpon>InsertRoti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supplier\DetailSupplier.resx">
       <DependentUpon>DetailSupplier.cs</DependentUpon>

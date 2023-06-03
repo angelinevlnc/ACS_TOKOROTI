@@ -74,5 +74,11 @@ namespace MasterTokoRoti
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MasterResep mr = new MasterResep();
+            mr.ShowDialog();
+        }
     }
 }

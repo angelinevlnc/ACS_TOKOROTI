@@ -38,7 +38,7 @@ namespace MasterTokoRoti
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnpRoti = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -135,22 +135,22 @@ namespace MasterTokoRoti
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Master Roti";
             // 
-            // btnpRoti
+            // button1
             // 
-            this.btnpRoti.Location = new System.Drawing.Point(23, 358);
-            this.btnpRoti.Name = "btnpRoti";
-            this.btnpRoti.Size = new System.Drawing.Size(305, 36);
-            this.btnpRoti.TabIndex = 10;
-            this.btnpRoti.Text = "Penanganan Roti";
-            this.btnpRoti.UseVisualStyleBackColor = true;
-            this.btnpRoti.Click += new System.EventHandler(this.btnpRoti_Click);
+            this.button1.Location = new System.Drawing.Point(23, 400);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(305, 36);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Master Resep";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(356, 488);
-            this.Controls.Add(this.btnpRoti);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -177,7 +177,7 @@ namespace MasterTokoRoti
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnpRoti;
+        private System.Windows.Forms.Button button1;
     }
 }
 
