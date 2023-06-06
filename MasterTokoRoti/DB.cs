@@ -12,6 +12,7 @@ namespace MasterTokoRoti
     {
         private static string connString = "";
         public static SqlConnection conn = null;
+        //todo
         const string NAMADB = "db_tokoroti";
         public DB()
         {
@@ -58,6 +59,59 @@ namespace MasterTokoRoti
             adapter.Fill(dt);
 
             return dt;
+        }
+
+        public static string getScalar(string query)
+        {
+            SqlCommand cmd = new SqlCommand(query, DB.conn);
+            DB.openConnection();
+            string res = cmd.ExecuteScalar().ToString();
+            DB.closeConnection();
+            return res;
+        }
+        public static DataTable get(string select, string tableName, string[] condition, string orderBy = "")
+        {
+            string cmdString = builderString(select, tableName, condition, orderBy);
+            SqlCommand cmd = new SqlCommand(cmdString, DB.conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            return dt;
+        }
+
+        public static string getScalar(string select, string tableName, string[] condition, string orderBy = "")
+        {
+            string cmdString = builderString(select, tableName, condition, orderBy);
+            SqlCommand cmd = new SqlCommand(cmdString, DB.conn);
+            DB.openConnection();
+            string res = cmd.ExecuteScalar().ToString();
+            DB.closeConnection();
+            return res;
+
+        }
+
+        private static string builderString(string select, string tableName, string[] condition, string orderBy = "")
+        {
+            DataSet s = new DataSet();
+            string whereBuilder = " ";
+            string orderBuilder = " ";
+            if (condition.Length > 0)
+            {
+                whereBuilder += "WHERE ";
+                for (int i = 0; i < condition.Length; i++)
+                {
+                    whereBuilder += condition[i];
+                    whereBuilder += (i + 1 < condition.Length - 1) ? " and " : "";
+                }
+            }
+            if (orderBy != "")
+            {
+                orderBuilder += $"order by {orderBy}";
+            }
+            select = select == "" ? "*" : select;
+            string cmdString = $"SELECT {select} FROM {tableName}{whereBuilder}{orderBuilder}";
+            return cmdString;
         }
 
     }

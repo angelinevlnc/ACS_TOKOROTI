@@ -52,6 +52,18 @@
     <Compile Include="Bahan\DetailBahan.Designer.cs">
       <DependentUpon>DetailBahan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPilihJumlahBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPilihJumlahBahan.Designer.cs">
+      <DependentUpon>FormPilihJumlahBahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPilihBahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPilihBahan.Designer.cs">
+      <DependentUpon>MasterPilihBahan.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterResep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bahan\InsertBahan.resx">
       <DependentUpon>InsertBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPilihJumlahBahan.resx">
+      <DependentUpon>FormPilihJumlahBahan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPilihBahan.resx">
+      <DependentUpon>MasterPilihBahan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterResep.resx">
       <DependentUpon>MasterResep.cs</DependentUpon>

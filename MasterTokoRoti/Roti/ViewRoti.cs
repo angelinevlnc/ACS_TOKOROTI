@@ -71,7 +71,7 @@ namespace MasterTokoRoti
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            InsertRoti ir = new InsertRoti();
+            InsertRoti ir = new InsertRoti(this);
             ir.ShowDialog();
         }
 
